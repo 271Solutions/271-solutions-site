@@ -66,10 +66,9 @@ export default function HomePage() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">271 Solutions</p>
-            <h1>Practical solutions. Professional execution. Modern presence.</h1>
+            <h1>Technical solutions for real-world infrastructure.</h1>
             <p className="hero-text">
-              271 Solutions helps businesses, facilities, and project teams solve technical,
-              operational, and field challenges with clarity, discipline, and real-world follow-through.
+              271 Solutions provides hands-on technical services, field support, and consulting for electrical, broadband, and infrastructure projects. We bridge the gap between engineering plans and real-world execution.
             </p>
 
             <div className="hero-actions">
@@ -82,21 +81,22 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hero-panel">
-            <div className="hero-stat-card">
-              <p className="stat-label">Built for</p>
-              <p className="stat-value">Technical Work</p>
-            </div>
-            <div className="hero-stat-card">
-              <p className="stat-label">Focused on</p>
-              <p className="stat-value">Execution</p>
-            </div>
-            <div className="hero-stat-card">
-              <p className="stat-label">Driven by</p>
-              <p className="stat-value">Professionalism</p>
-            </div>
-          </div>
-        </div>
+         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+  {[
+    "Electrical & Utility Support",
+    "Broadband & Make-Ready Coordination",
+    "Field Troubleshooting & Project Support",
+    "Professional, Reliable Execution"
+  ].map((item, index) => (
+    <div key={index} style={{
+      padding: "12px 16px",
+      background: "rgba(255,255,255,0.05)",
+      borderRadius: "8px"
+    }}>
+      ✔ {item}
+    </div>
+  ))}
+</div>
       </section>
 
       <section className="section" id="services">
