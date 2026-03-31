@@ -61,46 +61,46 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-overlay" />
-        <div className="container hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow">271 Solutions</p>
-            <h1>Technical solutions for real-world infrastructure.</h1>
-            <p className="hero-text">
-              271 Solutions provides hands-on technical services, field support, and consulting for electrical, broadband, and infrastructure projects. We bridge the gap between engineering plans and real-world execution.
-            </p>
+      <section className="hero">
+  <div className="container">
+    <div>
+      <p className="eyebrow">271 Solutions</p>
+      <h1>Technical solutions for real-world infrastructure.</h1>
+      <p className="hero-text">
+        271 Solutions provides hands-on technical services, field support, and consulting...
+      </p>
 
-            <div className="hero-actions">
-              <a href="#contact" className="button button-primary">
-                Request a Quote
-              </a>
-              <a href="#services" className="button button-secondary">
-                Explore Services
-              </a>
-            </div>
-          </div>
+      <div className="hero-actions">
+        <a href="#contact" className="button button-primary">
+          Request a Quote
+        </a>
+        <a href="#services" className="button button-secondary">
+          Explore Services
+        </a>
+      </div>
+    </div>
 
-      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-       {[
-         "Electrical & Utility Support",
-         "Broadband & Make-Ready Coordination",
-         "Field Troubleshooting & Project Support",
-         "Professional, Reliable Execution"
-       ].map((item, index) => (
-         <div 
-           key={index} 
-           style={{
+    <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+      {[
+        "Electrical & Utility Support",
+        "Broadband & Make-Ready Coordination",
+        "Field Troubleshooting & Project Support",
+        "Professional, Reliable Execution",
+      ].map((item, index) => (
+        <div
+          key={index}
+          style={{
             padding: "12px 16px",
             background: "rgba(255,255,255,0.05)",
-            borderRadius: "8px"
+            borderRadius: "8px",
           }}
         >
-          ✔ {item}
-      </div>
-  ))}
-</div>
-      </section>
+          ✓ {item}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="section" id="services">
         <div className="container">
