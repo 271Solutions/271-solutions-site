@@ -1,57 +1,65 @@
-import SectionTitle from '../components/SectionTitle';
+export default function Home() {
+  const services = [
+    {
+      title: "Technical Field Services",
+      description:
+        "Hands-on support for electrical, utility, and infrastructure-related work where practical execution matters.",
+    },
+    {
+      title: "Broadband & Make-Ready Support",
+      description:
+        "Coordination, field verification, and project support for broadband deployment, pole attachment, and make-ready efforts.",
+    },
+    {
+      title: "Engineering Support",
+      description:
+        "Real-world assistance that helps bridge the gap between design, planning, and field execution.",
+    },
+    {
+      title: "Project Coordination",
+      description:
+        "Reliable support to keep jobs moving, solve problems quickly, and maintain momentum from start to finish.",
+    },
+  ];
 
-const services = [
-  {
-    title: 'Technical Services',
-    text: 'Project coordination, field documentation, asset support, site assessments, and practical technical problem-solving for operations that need things done right the first time.',
-  },
-  {
-    title: 'Field & Facility Support',
-    text: 'Hands-on support for installations, upgrades, punch-list work, maintenance coordination, and small project execution where reliability matters more than buzzwords.',
-  },
-  {
-    title: 'Business Solutions',
-    text: 'Process improvement, client-facing support, digital presence, and custom solutions that help small businesses and organizations operate with more clarity and professionalism.',
-  },
-];
+  const highlights = [
+    "Electrical & Utility Support",
+    "Broadband & Make-Ready Coordination",
+    "Field Troubleshooting & Project Support",
+    "Professional, Reliable Execution",
+  ];
 
-const capabilities = [
-  'Reliable project execution',
-  'Clear communication with clients and stakeholders',
-  'Professional documentation and deliverables',
-  'Flexible support for technical and field needs',
-  'Modern digital solutions with practical value',
-  'Built for growth, not just appearances',
-];
+  const processSteps = [
+    {
+      step: "01",
+      title: "Assess the Need",
+      description:
+        "We start by understanding the job, the site conditions, and the real-world challenges that need to be solved.",
+    },
+    {
+      step: "02",
+      title: "Build a Practical Plan",
+      description:
+        "We focus on clear, workable solutions that fit the project scope, timeline, and field conditions.",
+    },
+    {
+      step: "03",
+      title: "Execute with Discipline",
+      description:
+        "From coordination to field support, we help move work forward with professionalism and follow-through.",
+    },
+  ];
 
-const process = [
-  {
-    step: '01',
-    title: 'Assess the need',
-    text: 'We start by understanding the real problem, not just the symptoms. That saves time, money, and the usual human tendency to overcomplicate simple things.',
-  },
-  {
-    step: '02',
-    title: 'Build the plan',
-    text: 'Every scope gets a clear direction, defined priorities, and a practical path forward that fits the job instead of forcing the job to fit a template.',
-  },
-  {
-    step: '03',
-    title: 'Execute with discipline',
-    text: 'From field support to technical delivery, the work gets done with professionalism, follow-through, and attention to details that actually matter.',
-  },
-];
-
-export default function HomePage() {
   return (
     <main>
       <header className="site-header">
-        <div className="brand">
-  <img src="/logo.png" alt="271 Solutions logo" className="brand-logo" />
-  <span>271 Solutions</span>
-</div>
+        <div className="container nav">
+          <a href="#top" className="brand">
+            <img src="/logo.png" alt="271 Solutions logo" className="brand-logo" />
+            <span>271 Solutions</span>
+          </a>
 
-          <nav>
+          <nav className="nav-links">
             <a href="#services">Services</a>
             <a href="#about">About</a>
             <a href="#process">Process</a>
@@ -60,98 +68,37 @@ export default function HomePage() {
         </div>
       </header>
 
-      <section className="hero">
-  <div className="container">
-    <div>
-      <p className="eyebrow">271 Solutions</p>
-      <h1>Technical solutions for real-world infrastructure.</h1>
-      <p className="hero-text">
-        271 Solutions provides hands-on technical services, field support, and consulting...
-      </p>
-
-      <div className="hero-actions">
-        <a href="#contact" className="button button-primary">
-          Request a Quote
-        </a>
-        <a href="#services" className="button button-secondary">
-          Explore Services
-        </a>
-      </div>
-    </div>
-
-    <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-      {[
-        "Electrical & Utility Support",
-        "Broadband & Make-Ready Coordination",
-        "Field Troubleshooting & Project Support",
-        "Professional, Reliable Execution",
-      ].map((item, index) => (
-        <div
-          key={index}
-          style={{
-            padding: "12px 16px",
-            background: "rgba(255,255,255,0.05)",
-            borderRadius: "8px",
-          }}
-        >
-          ✓ {item}
+      <section className="hero" id="top">
+        <div className="hero-background">
+          <div className="orb orb-1"></div>
+          <div className="orb orb-2"></div>
+          <div className="grid-overlay"></div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
 
-      <section className="section" id="services">
-        <div className="container">
-          <SectionTitle
-            eyebrow="Services"
-            title="Support that looks sharp and works hard"
-            description="This site is built to communicate competence immediately. Because that still matters, even in an age where half the internet looks like it was assembled during a coffee shortage."
-          />
+        <div className="container hero-content">
+          <p className="eyebrow">271 Solutions</p>
 
-          <div className="card-grid three-up">
-            {services.map((service) => (
-              <article className="service-card" key={service.title}>
-                <h3>{service.title}</h3>
-                <p>{service.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+          <h1>Technical solutions for real-world infrastructure.</h1>
 
-      <section className="section section-dark feature-band" id="about">
-        <div className="container split-layout">
-          <div>
-            <SectionTitle
-              eyebrow="About 271"
-              title="A serious brand for serious work"
-              description="271 Solutions is positioned as a modern, dependable company for technical services, field support, and business problem-solving. The tone is premium, confident, and grounded in substance rather than fluff."
-            />
+          <p className="hero-copy">
+            271 Solutions provides hands-on technical services, field support,
+            and practical consulting for electrical, broadband, utility, and
+            infrastructure-related projects. We help bridge the gap between
+            engineering plans and real-world execution.
+          </p>
+
+          <div className="hero-actions">
+            <a href="#contact" className="button button-primary">
+              Request a Quote
+            </a>
+            <a href="#services" className="button button-secondary">
+              Explore Services
+            </a>
           </div>
 
-          <div className="glass-panel">
-            <p>
-              This design takes inspiration from high-end industrial and technology brands: strong type,
-              dark atmosphere, sharp spacing, and clean storytelling. The difference is that this version is
-              built for your company, not as a copy of somebody else&apos;s homework.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionTitle
-            eyebrow="Capabilities"
-            title="What sets the brand apart"
-            description="Use these as brand pillars now, then refine them later as 271 Solutions narrows or expands its service lines."
-            align="center"
-          />
-
-          <div className="capability-grid">
-            {capabilities.map((item) => (
-              <div className="capability-pill" key={item}>
+          <div className="hero-bullets">
+            {highlights.map((item) => (
+              <div key={item} className="bullet-card">
                 {item}
               </div>
             ))}
@@ -159,56 +106,96 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section section-dark" id="process">
+      <section className="section" id="services">
         <div className="container">
-          <SectionTitle
-            eyebrow="Process"
-            title="A straightforward way to work"
-            description="Clean process builds trust. Also reduces the number of avoidable surprises, which humans produce at industrial scale."
-          />
+          <div className="section-heading">
+            <p className="section-label">Services</p>
+            <h2>Support built for projects that require real execution.</h2>
+            <p className="section-copy">
+              We focus on practical, dependable support for field-driven work,
+              project coordination, and technical problem-solving.
+            </p>
+          </div>
 
-          <div className="card-grid three-up">
-            {process.map((item) => (
-              <article className="process-card" key={item.step}>
-                <span className="step-tag">{item.step}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+          <div className="card-grid">
+            {services.map((service) => (
+              <article key={service.title} className="info-card">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section contact-section" id="contact">
-        <div className="container contact-grid">
+      <section className="section section-alt" id="about">
+        <div className="container two-column">
           <div>
-            <SectionTitle
-              eyebrow="Contact"
-              title="Ready to build the next step"
-              description="Replace the placeholder contact information below with your real email, phone number, and service area before launch. Tiny detail, apparently worth mentioning."
-            />
+            <p className="section-label">About</p>
+            <h2>Built for practical work, not empty talk.</h2>
           </div>
 
-          <div className="contact-card">
-            <p><strong>Email</strong><br />Isaac@271solutions.com</p>
-            <p><strong>Phone</strong><br />(505) 290-0133</p>
-            <p><strong>Service Area</strong><br />New Mexico and surrounding region</p>
-            <a href="mailto:Isaac@271solutions.com" className="button button-primary full-width">
-              Contact 271 Solutions
-            </a>
+          <div className="stack-text">
+            <p>
+              271 Solutions was built to provide dependable support where it
+              matters most, in the field and in the work itself. We understand
+              the gap between plans on paper and what it actually takes to get a
+              job done.
+            </p>
+            <p>
+              With experience surrounding electrical systems, broadband
+              infrastructure, coordination, and technical problem-solving, our
+              approach is simple: show up, solve problems, communicate clearly,
+              and execute professionally.
+            </p>
+            <p className="location-note">
+              Serving Grants, New Mexico and surrounding areas.
+            </p>
           </div>
         </div>
       </section>
 
-      <footer className="site-footer">
-        <div className="container footer-wrap">
-          <div>
-            <p className="footer-brand">271 Solutions</p>
-            <p className="footer-copy">Technical services, field support, and business solutions.</p>
+      <section className="section" id="process">
+        <div className="container">
+          <div className="section-heading">
+            <p className="section-label">Process</p>
+            <h2>A straightforward approach that keeps work moving.</h2>
           </div>
-          <p className="footer-copy">© 2026 271 Solutions. All rights reserved.</p>
+
+          <div className="process-grid">
+            {processSteps.map((item) => (
+              <article key={item.step} className="process-card">
+                <span className="process-step">{item.step}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </article>
+            ))}
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <section className="section section-contact" id="contact">
+        <div className="container contact-box">
+          <div>
+            <p className="section-label">Contact</p>
+            <h2>Let’s talk about your project.</h2>
+            <p className="section-copy">
+              Reach out for service inquiries, project support, or to discuss
+              how 271 Solutions can help move your work forward.
+            </p>
+          </div>
+
+          <div className="contact-details">
+            <p>
+              <strong>Email:</strong> Isaac@271solutions.com
+            </p>
+            <p>
+              <strong>Phone:</strong> (505) 290-0133
+            </p>
+            <p>Call or text for service inquiries.</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
