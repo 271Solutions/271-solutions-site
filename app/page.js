@@ -46,11 +46,10 @@ export default function HomePage() {
   return (
     <main>
       <header className="site-header">
-        <div className="container nav-wrap">
-          <a href="#top" className="brand-mark" aria-label="271 Solutions home">
-            <span className="brand-number">271</span>
-            <span className="brand-name">Solutions</span>
-          </a>
+        <div className="brand">
+  <img src="/logo.png" alt="271 Solutions logo" className="brand-logo" />
+  <span>271 Solutions</span>
+</div>
 
           <nav>
             <a href="#services">Services</a>
