@@ -81,21 +81,23 @@ export default function HomePage() {
             </div>
           </div>
 
-         <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-  {[
-    "Electrical & Utility Support",
-    "Broadband & Make-Ready Coordination",
-    "Field Troubleshooting & Project Support",
-    "Professional, Reliable Execution"
-  ].map((item, index) => (
-    <div key={index} style={{
-      padding: "12px 16px",
-      background: "rgba(255,255,255,0.05)",
-      borderRadius: "8px"
-    }}
-  >
-      ✔ {item}
-    </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+       {[
+         "Electrical & Utility Support",
+         "Broadband & Make-Ready Coordination",
+         "Field Troubleshooting & Project Support",
+         "Professional, Reliable Execution"
+       ].map((item, index) => (
+         <div 
+           key={index} 
+           style={{
+            padding: "12px 16px",
+            background: "rgba(255,255,255,0.05)",
+            borderRadius: "8px"
+          }}
+        >
+          ✔ {item}
+      </div>
   ))}
 </div>
       </section>
