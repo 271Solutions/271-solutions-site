@@ -188,10 +188,10 @@ export default function HomePage() {
           </div>
 
           <div className="contact-card">
-            <p><strong>Email</strong><br />hello@271solutions.com</p>
-            <p><strong>Phone</strong><br />(555) 555-2710</p>
+            <p><strong>Email</strong><br />Isaac@271solutions.com</p>
+            <p><strong>Phone</strong><br />(505) 290-0133</p>
             <p><strong>Service Area</strong><br />New Mexico and surrounding region</p>
-            <a href="mailto:hello@271solutions.com" className="button button-primary full-width">
+            <a href="mailto:Isaac@271solutions.com" className="button button-primary full-width">
               Contact 271 Solutions
             </a>
           </div>
