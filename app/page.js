@@ -358,7 +358,7 @@ export default function Home() {
           <div className="section-heading insights-heading fade-up">
             <div>
               <p className="section-label">Insights</p>
-              <h2>Thoughtful content that builds credibility and drives traffic.</h2>
+              <h2>Practical thinking on systems, execution, and modern operations.</h2>
             </div>
 
             <a href="/insights" className="text-link">
