@@ -57,12 +57,12 @@ export default function Home() {
             <img src="/logo.png" alt="271 Solutions logo" className="brand-logo" />
           </a>
 
-          <nav className="nav-links">
+          <nav className="nav-links" aria-label="Primary navigation">
             <a href="#services">Services</a>
             <a href="#focus">Focus</a>
             <a href="#about">About</a>
             <a href="#process">Process</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className="nav-cta">Contact</a>
           </nav>
         </div>
       </header>
