@@ -1,4 +1,31 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Home() {
+  const [hideHeader, setHideHeader] = useState(false);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 40) {
+        setHideHeader(false);
+      } else if (currentScrollY > lastScrollY) {
+        setHideHeader(true);
+      } else {
+        setHideHeader(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const services = [
     {
       title: "Infrastructure Support",
@@ -51,7 +78,7 @@ export default function Home() {
 
   return (
     <main>
-      <header className="site-header">
+      <header className={`site-header ${hideHeader ? "site-header-hidden" : ""}`}>
         <div className="container nav-shell">
           <a href="#top" className="brand" aria-label="271 Solutions home">
             <img src="/logo.png" alt="271 Solutions logo" className="brand-logo" />
