@@ -8,44 +8,44 @@ export default function Home() {
     {
       title: "AI & Process Integration",
       description:
-        "Help organizations identify repetitive work, streamline systems, and apply AI in ways that are actually useful.",
+        "Identify repetitive work, streamline systems, and apply AI in ways that create real operational value.",
     },
     {
-      title: "Systems & Workflow Improvement",
+      title: "Workflow & Systems Improvement",
       description:
-        "From field coordination to office processes, we help simplify workflows, reduce friction, and improve visibility.",
+        "Simplify processes, improve visibility, and reduce friction across field operations, office workflows, and project coordination.",
     },
     {
       title: "Technical Project Support",
       description:
-        "Reliable support for planning, coordination, documentation, field-driven problem solving, and follow-through.",
+        "Reliable support for planning, documentation, coordination, problem-solving, and follow-through from start to finish.",
     },
   ];
 
   const focusAreas = [
     "Utilities & infrastructure",
     "Broadband & make-ready support",
-    "Process improvement",
     "AI adoption & workflow automation",
+    "Operational systems improvement",
     "Technical field coordination",
-    "Operational visibility & execution",
+    "Execution-driven support",
   ];
 
   const processSteps = [
     {
       number: "01",
       title: "Assess",
-      text: "We start by understanding the real need, the current process, and where the bottlenecks are.",
+      text: "We start by understanding the real bottlenecks, the current workflow, and where the operation needs clarity.",
     },
     {
       number: "02",
-      title: "Simplify",
-      text: "We build practical solutions that reduce confusion, remove waste, and fit the way work actually gets done.",
+      title: "Design",
+      text: "We build practical solutions that fit the way work actually gets done, not the way people wish it worked in theory.",
     },
     {
       number: "03",
       title: "Implement",
-      text: "We help move from idea to execution with clear communication, support, and disciplined follow-through.",
+      text: "We help move the solution into execution with support, visibility, and disciplined follow-through.",
     },
   ];
 
@@ -62,7 +62,9 @@ export default function Home() {
             <a href="#focus">Focus</a>
             <a href="#about">About</a>
             <a href="#process">Process</a>
-            <a href="#contact" className="nav-cta">Contact</a>
+            <a href="#contact" className="nav-cta">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
@@ -90,13 +92,14 @@ export default function Home() {
           <p className="eyebrow">Modern systems. Real-world execution.</p>
 
           <h1>
-            Smarter systems for infrastructure, operations, and the work that keeps everything moving.
+            Smarter systems for infrastructure, operations, and organizations that
+            need work to actually move.
           </h1>
 
           <p className="hero-copy">
-            271 Solutions helps organizations improve processes, streamline operations,
-            support infrastructure projects, and integrate practical AI tools that
-            make work clearer, faster, and more effective.
+            271 Solutions helps organizations improve processes, support technical
+            projects, streamline workflows, and integrate practical AI tools that
+            make operations clearer, faster, and more effective.
           </p>
 
           <div className="hero-actions">
@@ -104,26 +107,26 @@ export default function Home() {
               Start a Conversation
             </a>
             <a href="#services" className="button button-secondary">
-              View Services
+              Explore Services
             </a>
           </div>
 
           <div className="hero-highlights">
             <div className="highlight-card">
               <span className="highlight-kicker">Execution</span>
-              <strong>Field-aware, practical support</strong>
+              <strong>Practical, field-aware support</strong>
             </div>
             <div className="highlight-card">
               <span className="highlight-kicker">Systems</span>
-              <strong>Workflow clarity and process improvement</strong>
+              <strong>Clearer workflows and stronger visibility</strong>
             </div>
             <div className="highlight-card">
               <span className="highlight-kicker">AI</span>
-              <strong>Useful integration, not hype</strong>
+              <strong>Useful integration without the hype</strong>
             </div>
             <div className="highlight-card">
               <span className="highlight-kicker">Results</span>
-              <strong>Clearer work. Better follow-through.</strong>
+              <strong>Less friction. Better follow-through.</strong>
             </div>
           </div>
         </div>
@@ -133,10 +136,11 @@ export default function Home() {
         <div className="container">
           <div className="section-heading">
             <p className="section-label">Services</p>
-            <h2>Support designed for real operations, not just polished presentations.</h2>
+            <h2>Support built for complex work, modern systems, and real operations.</h2>
             <p className="section-copy">
-              We work where systems, people, and execution meet. The goal is simple:
-              reduce friction, improve visibility, and help work move forward.
+              We work where people, systems, and execution meet. The goal is to
+              reduce friction, improve visibility, and help work move forward with
+              more clarity and less waste.
             </p>
           </div>
 
@@ -153,14 +157,14 @@ export default function Home() {
       </section>
 
       <section className="section section-alt" id="focus">
-        <div className="container focus-layout">
-          <div className="focus-copy">
+        <div className="container split-layout">
+          <div className="split-copy">
             <p className="section-label">Focus Areas</p>
-            <h2>Built to serve organizations that need better systems and better execution.</h2>
+            <h2>Built to support organizations that need better systems and better execution.</h2>
             <p className="section-copy">
-              271 Solutions is positioned to support utilities, infrastructure teams,
-              technical operations, and organizations looking to modernize workflows
-              without creating more complexity in the process.
+              271 Solutions is positioned to support infrastructure teams,
+              operational leaders, and organizations ready to modernize workflows
+              without creating more noise in the process.
             </p>
           </div>
 
@@ -175,31 +179,32 @@ export default function Home() {
       </section>
 
       <section className="section" id="about">
-        <div className="container about-layout">
-          <div className="about-panel about-panel-main">
+        <div className="container split-layout about-layout">
+          <div className="split-copy">
             <p className="section-label">About</p>
             <h2>Built for the gap between planning and reality.</h2>
-            <p>
+            <p className="section-copy">
               Too many organizations have good intentions, expensive tools, and
-              complicated systems that still fail in day-to-day execution.
+              complex workflows that still fail in day-to-day execution. 271
+              Solutions exists to help close that gap.
             </p>
-            <p>
-              271 Solutions exists to help close that gap. We focus on practical
-              support, operational clarity, process improvement, and modern tools
-              that help teams work smarter without losing sight of real-world demands.
+            <p className="section-copy">
+              We focus on practical support, operational clarity, workflow
+              improvement, and modern tools that help teams work smarter without
+              losing sight of real-world demands.
             </p>
           </div>
 
-          <div className="about-panel about-panel-side">
-            <div className="stat-block">
+          <div className="about-stats">
+            <div className="stat-card">
               <span className="stat-label">Approach</span>
               <strong>Practical, disciplined, adaptable</strong>
             </div>
-            <div className="stat-block">
+            <div className="stat-card">
               <span className="stat-label">Location</span>
               <strong>Based in Grants, New Mexico</strong>
             </div>
-            <div className="stat-block">
+            <div className="stat-card">
               <span className="stat-label">Mission</span>
               <strong>Bring clarity, efficiency, and follow-through to complex work</strong>
             </div>
@@ -211,7 +216,7 @@ export default function Home() {
         <div className="container">
           <div className="section-heading">
             <p className="section-label">Process</p>
-            <h2>A straightforward approach that keeps work from stalling out.</h2>
+            <h2>A clear approach that keeps work from stalling out.</h2>
           </div>
 
           <div className="process-grid">
@@ -230,11 +235,12 @@ export default function Home() {
         <div className="container cta-box">
           <div>
             <p className="section-label">Why 271 Solutions</p>
-            <h2>Because modern tools are only useful if they actually improve the work.</h2>
+            <h2>Modern tools only matter if they actually improve the work.</h2>
           </div>
           <p className="cta-copy">
-            We help teams cut through clutter, improve process flow, support execution,
-            and adopt practical systems that create real operational value.
+            We help teams cut through clutter, improve process flow, support
+            execution, and adopt practical systems that create real operational
+            value.
           </p>
         </div>
       </section>
