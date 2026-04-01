@@ -2,7 +2,7 @@
 
 This is a **Next.js** website starter for **271 Solutions**, designed with a premium dark industrial/technology aesthetic inspired by the overall feel of high-end startup landing pages.
 
-## What's Included
+## What's Includ ed
 - Next.js 14 app-router setup
 - Responsive landing page
 - Sections for hero, services, about, capabilities, process, and contact
