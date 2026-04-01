@@ -54,9 +54,8 @@ export default function Home() {
     <main>
       <header className="site-header">
         <div className="container nav">
-          <a href="#top" className="brand">
+          <a href="#top" className="brand" aria-label="271 Solutions Home">
             <img src="/logo.png" alt="271 Solutions logo" className="brand-logo" />
-            <span>271 Solutions</span>
           </a>
 
           <nav className="nav-links">
@@ -69,22 +68,31 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-background">
-          <div className="orb orb-1"></div>
-          <div className="orb orb-2"></div>
-          <div className="grid-overlay"></div>
+        <div className="hero-media">
+          <video
+            className="hero-video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/hero-poster.jpg"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+
+          <div className="hero-overlay"></div>
+          <div className="hero-grid"></div>
         </div>
 
         <div className="container hero-content">
-          <p className="eyebrow">271 Solutions</p>
+          <p className="eyebrow">Field-driven technical support</p>
 
           <h1>Technical solutions for real-world infrastructure.</h1>
 
           <p className="hero-copy">
             271 Solutions provides hands-on technical services, field support,
             and practical consulting for electrical, broadband, utility, and
-            infrastructure-related projects. We help bridge the gap between
-            engineering plans and real-world execution.
+            infrastructure-related projects across New Mexico.
           </p>
 
           <div className="hero-actions">
