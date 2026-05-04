@@ -20,20 +20,22 @@ export default function Home() {
       .select("*")
       .order("id", { ascending: false });
 
+    console.log("FETCH RESULT:", data, error);
+
     if (error) {
-      console.error("Error fetching:", error);
+      console.error("Fetch error:", error);
     } else {
-      setTestimonies(data);
+      setTestimonies(data || []);
     }
   }
 
-  // ➕ Submit testimony
+  // ➕ Submit testimony (WITH DEBUG)
   async function handleSubmit(e) {
     e.preventDefault();
 
     if (!before || !moment || !after) return;
 
-    const { error } = await supabase.from("testimonies").insert([
+    const { data, error } = await supabase.from("testimonies").insert([
       {
         before,
         moment,
@@ -41,6 +43,8 @@ export default function Home() {
         witness: 0,
       },
     ]);
+
+    console.log("INSERT RESULT:", data, error);
 
     if (error) {
       console.error("Insert error:", error);
@@ -56,10 +60,12 @@ export default function Home() {
 
   // 👍 Update witness count
   async function addWitness(id, currentCount) {
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("testimonies")
       .update({ witness: currentCount + 1 })
       .eq("id", id);
+
+    console.log("UPDATE RESULT:", data, error);
 
     if (error) {
       console.error("Update error:", error);
@@ -186,7 +192,3 @@ const styles = {
     cursor: "pointer",
   },
 };
-      </section>
-    </main>
-  );
-}
